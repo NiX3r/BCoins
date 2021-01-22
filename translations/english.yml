@@ -1,0 +1,37 @@
+UnknownCommandBCoin: 'Unknown command! Please type: &c/bcoin'
+UnknownCommandBShop: 'Unknown command! Please type: &c/bshop'
+Reload: You successfully reloaded config and messages!
+ItemNotExists: 'Item does not exist! Type: &c/bshop list'
+ItemExists: 'Item already exist! Type: &c/bshop list'
+RemoveItem: You have successfully removed item &4%ITEM%
+CreateItem: You have successfully created item &4%ITEM%
+HaveNotPerm: 'Unfortunately you do not have the following permission: &4%PERM%'
+TooPoor: Unfortunately you do not have enough BCoins to buy this
+TargetOffline: Target is currently offline!
+UncorrectBCoinFormat: You have to type the amount of BCoins
+AddCommand: |-
+  You have successfully added command into &4%ITEM%
+  %CMD%
+RemoveCommand: |-
+  You have successfully removed command from &4%ITEM%
+  %CMD%
+PlayerWallet: '&4%NICK%&7s wallet: &4%BCOIN% &7BCoins'
+PlayerBuySelf: You have bought item &4%ITEM%&7. You now have &4%WALLET% &7BCoins
+PlayerBuyPlayer: You have bought item &4%ITEM%&7 to %NICK%. You now have &4%WALLET%
+  &7BCoins
+PlayerBuyYou: Player &4%NICK% &7bought you item &4%ITEM%
+AdminGiveYou: Admin &4%NICK% &7gave you item &4%ITEM%
+YouGivePlayer: You gave &4%NICK% &7item &4%ITEM%
+YouSetPlayer: You set &4%NICK% &7BCoins to &4%BCOIN% &7BCoins
+AdminSetYou: Admin &4%NICK% &7set your BCoins to &4%BCOIN% &7BCoins
+YouAddPlayer: 'You added &4%NICK% &4%BCOIN% &7BCoins. &4%NICK%&7s balance: &4%WALLET%
+  &7BCoins'
+AdminAddYou: Admin &4%NICK% &7added you &4%BCOIN% &7BCoins. You now have &4%WALLET%
+  &7BCoins
+YouRemovePlayer: 'You removed &4%NICK% &4%BCOIN%&7 BCoins. &4%NICK%&7s balance: &4%WALLET%
+  &7BCoins'
+AdminRemoveYou: Admin &4%NICK% &7removed you &4%BCOIN% &7BCoins. You now have &4%WALLET%
+  &7BCoins
+YouSendPlayer: You have sent &4%NICK% %BCOIN% &7BCoins. You now have &4%WALLET% &7BCoins
+PlayerSendYou: Player &4%NICK% &7has sent you &4%BCOIN% &7BCoins. You now have &4%WALLET%
+  &7BCoins
