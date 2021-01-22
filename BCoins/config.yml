@@ -1,0 +1,45 @@
+Prefix: '&4&lBCoin &c» §7'
+SQL:
+    Use: false
+    Host: 'localhost'
+    Port: 3306
+    Database: 'database'
+    User: 'user'
+    Pass: 'pass'
+Menus:
+    BCoinUsage:
+        Admin: |-
+            &4&l-----===== &cBCoins &4&l=====-----
+            &c/bcoin check &7- view your BCoins
+            &c/bcoin check <nick> &7- view players BCoins
+            &c/bcoin send <nick> <amount> &7 - send player BCoins
+            &c/bcoin add <nick> <amount> &7- add player BCoins
+            &c/bcoin remove <nick> <amount> &7- remove player BCoins
+            &c/bcoin set <nick> <amount> &7- set player BCoins
+            &c/bcoin reload &7- reload messages and config
+        NonAdmin: |-
+            &4&l-----===== &cBCoins &4&l=====-----
+            &c/bcoin check &7- view your BCoins
+            &c/bcoin check <nick> &7- view players BCoins
+            &c/bcoin send <nick> <amount> &7 - send player BCoins
+    BShopUsage:
+        Admin: |-
+            &4&l-----===== &cBShop &4&l=====-----
+            &c/bshop list &7- view shop items
+            &c/bcoin buy <key> &7- buy shop item
+            &c/bcoin buy <key> <nick> &7 - buy shop item to player
+        NonAdmin: |-
+            &4&l-----===== &cBShop &4&l=====-----
+            &c/bshop list &7- view shop items
+            &c/bcoin buy <key> &7- buy shop item
+            &c/bcoin buy <key> <nick> &7- buy shop item to player
+            &c/bcoin give <key> <nick> &7- give player shop item
+            &c/bcoin create <key> <amount> &7- create shop item
+            &c/bcoin remove <key> &7- remove shop item
+            &c/bcoin cmd <key> list &7- view shop items commands
+            &c/bcoin cmd <key> add <cmd> &7- add command into shop item
+            &c/bcoin cmd <key> remove <cmd> &7- remove command from shop item
+    Lists:
+        BShop: '&4&l-----===== &cBShop Items &4&l=====-----'
+        ItemCommands: '&4&l-----===== &cBShop &4&l=====-----'
+        ItemCommandsNotSet: Item is not set
