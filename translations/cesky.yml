@@ -1,0 +1,32 @@
+UnknownCommandBCoin: 'Neznámý příkaz! Napiš: &c/bcoin'
+UnknownCommandBShop: 'Neznámý příkaz! Napiš: &c/bshop'
+Reload: Úspěšně jsi obnovil messages.yml a config.yml!
+ItemNotExists: 'Předmět neexistuje! Napiš: &c/bshop list'
+ItemExists: 'Předmět již existuje! Napiš: &c/bshop list'
+RemoveItem: Úspěšně jsi smazal předmět &4%ITEM%
+CreateItem: Úspěšně jsi vytvořil předmět &4%ITEM%
+HaveNotPerm: 'Na tento příkaz bohužel nemáš povolení: &4%PERM%'
+TooPoor: Bohužel nemáš dostatečný obnos
+TargetOffline: Cílený hráč není na serveru!
+UncorrectBCoinFormat: Musíš napsat počet BCoinů
+AddCommand: Úspěšně jsi do předmětu &4%ITEM% přidal příkaz %CMD%
+RemoveCommand: Úspěšně jsi z předmětu &4%ITEM% odebral příkaz %CMD%
+PlayerWallet: '&4%NICK%&7 peněženka: &4%BCOIN% &7BCoinů'
+PlayerBuySelf: Koupil jsi předmět &4%ITEM%&7. Nyní máš &4%WALLET% &7BCoinů
+PlayerBuyPlayer: Koupil jsi předmět &4%ITEM%&7 hráči %NICK%. Nyný máš &4%WALLET% &7BCoinů
+PlayerBuyYou: Hráč &4%NICK% &7Ti koupil předmět &4%ITEM%
+AdminGiveYou: Admin &4%NICK% &7Ti daroval předmět &4%ITEM%
+YouGivePlayer: Daroval jsi hráči &4%NICK% &7předmět &4%ITEM%
+YouSetPlayer: Nastavil jsi hráči &4%NICK% &4%BCOIN% &7BCoinů
+AdminSetYou: Admin &4%NICK% &7Ti nastavil &4%BCOIN% &7BCoinů
+YouAddPlayer: 'Přidal jsi hráči &4%NICK% &4%BCOIN% &7BCoinů. &4%NICK%&7 peněženka: &4%WALLET%
+  &7BCoinů'
+AdminAddYou: 'Admin &4%NICK% &7Ti přidal &4%BCOIN% &7BCoinů. Nyní máš &4%WALLET%
+  &7BCoinů'
+YouRemovePlayer: 'Odebral jsi hráči &4%NICK% &4%BCOIN%&7 BCoinů. &4%NICK%&7 peněženka: &4%WALLET%
+  &7BCoinů'
+AdminRemoveYou: 'Admin &4%NICK% &7Ti odebral &4%BCOIN% &7BCoinů. Nyní máš &4%WALLET%
+  &7BCoinů'
+YouSendPlayer: 'Poslal jsi hráči &4%NICK% %BCOIN% &7BCoinů. Nyní máš &4%WALLET% &7BCoinů'
+PlayerSendYou: 'Hráč &4%NICK% &7Ti zaslal &4%BCOIN% &7BCoinů. Nyní máš &4%WALLET%
+  &7BCoinů'
