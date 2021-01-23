@@ -1,0 +1,32 @@
+UnknownCommandBCoin: 'Neznámy príkaz! Napiš: &c/bcoin'
+UnknownCommandBShop: 'Neznámý príkaz! Napiš: &c/bshop'
+Reload: Uspešne si obnovil messages.yml a config.yml!
+ItemNotExists: 'Predmet neexistuje! Napiš: &c/bshop list'
+ItemExists: 'Predmet už existuje! Napiš: &c/bshop list'
+RemoveItem: Uspešne si vymazal predmet: &4%ITEM%
+CreateItem: Uspešne si vytvoril predmet: &4%ITEM%
+HaveNotPerm: 'Na tento príkaz bouhiaľ nemáš oprávnenia!: &4%PERM%'
+TooPoor: Bohužiaľ nemáš dostatočný obnos
+TargetOffline: Cieľový hráč nie je na serveri!
+UncorrectBCoinFormat: Musíš uviesť počet BCoinov!
+AddCommand: Uspešne si do predmetov &4%ITEM% pridal príkaz %CMD%
+RemoveCommand: Uspešne si z predmetov &4%ITEM% odobral príkaz %CMD%
+PlayerWallet: '&4%NICK%&7 peňaženka: &4%BCOIN% &7BCoinov'
+PlayerBuySelf: Kupil si predmet: &4%ITEM%&7. Práve teraz máš &4%WALLET% &7BCoinov
+PlayerBuyPlayer: Kúpil si predmet &4%ITEM%&7 hráčovi %NICK%. Práve teraz máš &4%WALLET% &7BCoinov
+PlayerBuyYou: Hráč &4%NICK% &7Ti kúpil predmet &4%ITEM%
+AdminGiveYou: Admin &4%NICK% &7Ti daroval predmet &4%ITEM%
+YouGivePlayer: Daroval si hráčovi &4%NICK% &7predmet &4%ITEM%
+YouSetPlayer: Nastavil si hráčovi &4%NICK% &4%BCOIN% &7BCoinov
+AdminSetYou: Admin &4%NICK% &7Ti nastavil &4%BCOIN% &7BCoinov
+YouAddPlayer: 'Pridal si hráčovi &4%NICK% &4%BCOIN% &7BCoinov. &4%NICK%&7 peňaženka: &4%WALLET%
+  &7BCoinov'
+AdminAddYou: 'Admin &4%NICK% &7Ti přidal &4%BCOIN% &7BCoinů. Práve teraz máš &4%WALLET%
+  &7BCoinov'
+YouRemovePlayer: 'Odobral si hráčovi &4%NICK% &4%BCOIN%&7 BCoinov. &4%NICK%&7 peňaženka: &4%WALLET%
+  &7BCoinov'
+AdminRemoveYou: 'Admin &4%NICK% &7Ti odebral &4%BCOIN% &7BCoinov. Práve teraz máš &4%WALLET%
+  &7BCoinov'
+YouSendPlayer: 'Poslal si hráčovi &4%NICK% %BCOIN% &7BCoinov. Práve teraz máš &4%WALLET% &7BCoinov'
+PlayerSendYou: 'Hráč &4%NICK% &7Ti poslal &4%BCOIN% &7BCoinov. Práve teraz máš &4%WALLET%
+  &7BCoinov'
