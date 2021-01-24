@@ -66,6 +66,13 @@ public class BCoinCommand implements CommandExecutor {
             
             if(args[0].equalsIgnoreCase("send")) {
                 
+                if(!args[1].equals(sender.getName())) {
+                    
+                }
+                else {
+                    
+                }
+                
                 if(Bukkit.getPlayer(args[1]) != null) {
                     
                     Player pTaker = Bukkit.getPlayer(args[1]);

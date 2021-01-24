@@ -16,8 +16,7 @@ public class MessagesUtil {
         
         File msg = new File("plugins/BCoins/messages.yml");
         FileConfiguration msgfc = YamlConfiguration.loadConfiguration(msg);
-        FileConfiguration config = BCoins.GetInst().getConfig();
-        String help;
+        FileConfiguration config = YamlConfiguration.loadConfiguration(new File("plugins/BCoins/config.yml"));
         
         BCoins.GetMessages().setBCoinUsageAdmin(config.getString("Menus.BCoinUsage.Admin"));
         BCoins.GetMessages().setBCoinUsageNonAdmin(config.getString("Menus.BCoinUsage.NonAdmin"));
@@ -52,6 +51,7 @@ public class MessagesUtil {
         BCoins.GetMessages().setAdminAddYou(msgfc.getString("AdminAddYou"));
         BCoins.GetMessages().setYouRemovePlayer(msgfc.getString("YouRemovePlayer"));
         BCoins.GetMessages().setAdminRemoveYou(msgfc.getString("AdminRemoveYou"));
+        BCoins.GetMessages().setSendYourself("SendYourself");
         BCoins.GetMessages().setYouSendPlayer(msgfc.getString("YouSendPlayer"));
         BCoins.GetMessages().setPlayerSendYou(msgfc.getString("PlayerSendYou"));
         
