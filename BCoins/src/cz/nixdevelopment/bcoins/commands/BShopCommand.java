@@ -19,7 +19,7 @@ public class BShopCommand implements CommandExecutor {
         
         
         if(args.length == 0) {
-            if(!sender.hasPermission("bcoins.admin")) {
+            if(sender.hasPermission("bcoins.admin")) {
                 sender.sendMessage(BCoins.GetMessages().BShopUsageAdmin().replaceAll("&", "§"));
             }
             else {
