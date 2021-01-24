@@ -4,40 +4,41 @@ import cz.nixdevelopment.bcoins.BCoins;
 
 public class MessagesInstance {
 
-    private String unknownCommandBCoin = "&4Error#404 - Message not found! Messages.UnknownCommandBCoin";
-    private String unknownCommandBShop = "&4Error#404 - Message not found! Messages.UnknownCommandBShop";
-    private String reload = "&4Error#404 - Message not found! Messages.UnknownCommandBShop"; 
-    private String itemNotExists = "&4Error#404 - Message not found! Messages.ItemNotExists";
-    private String itemExists = "&4Error#404 - Message not found! Messages.ItemExists";
-    private String removeItem = "&4Error#404 - Message not found! Messages.RemoveItem";
-    private String createItem = "&4Error#404 - Message not found! Messages.CreateItem";
-    private String haveNotPerm = "&4Error#404 - Message not found! Messages.HaveNotPerm";
-    private String tooPoor = "&4Error#404 - Message not found! Messages.TooPoor";
-    private String targetOffline = "&4Error#404 - Message not found! Messages.TargetOffline";
-    private String uncorrectBCoinFormat = "&4Error#404 - Message not found! Messages.UncorrectBCoinFormat";
-    private String addCommand = "&4Error#404 - Message not found! Messages.AddCommand";
-    private String removeCommand = "&4Error#404 - Message not found! Messages.RemoveCommand";
-    private String playerWallet = "&4Error#404 - Message not found! Messages.PlayerWallet";
-    private String playerBuySelf = "&4Error#404 - Message not found! Messages.PlayerBuySelf";
-    private String playerBuyPlayer = "&4Error#404 - Message not found! Messages.PlayerBuyPlayer";
-    private String playerBuyYou = "&4Error#404 - Message not found! Messages.PlayerBuyYou";
-    private String adminGiveYou = "&4Error#404 - Message not found! Messages.AdminGiveYou";
-    private String youGivePlayer = "&4Error#404 - Message not found! Messages.YouGivePlayer";
-    private String youSetPlayer = "&4Error#404 - Message not found! Messages.YouSetPlayer";
-    private String adminSetYou = "&4Error#404 - Message not found! Messages.AdminSetYou";
-    private String youAddPlayer = "&4Error#404 - Message not found! Messages.YouAddPlayer";
-    private String adminAddYou = "&4Error#404 - Message not found! Messages.AdminAddYou";
-    private String youRemovePlayer = "&4Error#404 - Message not found! Messages.YouRemovePlayer";
-    private String adminRemoveYou = "&4Error#404 - Message not found! Messages.AdminRemoveYou";
-    private String youSendPlayer = "&4Error#404 - Message not found! Messages.YouSendPlayer";
-    private String playerSendYou = "&4Error#404 - Message not found! Messages.PlayerSendYou";
-    private String BCoinUsageAdmin = "&4Error#404 - Message not found! Config.NonTranslatedUsage.Admin";
-    private String BCoinUsageNonAdmin = "&4Error#404 - Message not found! Config.NonTranslatedUsage.NonAdmin";
-    private String BShopUsageAdmin = "&4Error#404 - Message not found! Config.NonTranslatedUsage.Admin";
-    private String BShopUsageNonAdmin = "&4Error#404 - Message not found! Config.NonTranslatedUsage.NonAdmin";
-    private String ListBShop = "&4Error#404 - Message not found! Config.Lists.BShop";
-    private String ListItemCommands = "&4Error#404 - Message not found! Config.Lists.ItemCommands";
-    private String ListItemCommandsNotSet = "&4Error#404 - Message not found! Config.Lists.ItemCommandsNotSet";
+    private String unknownCommandBCoin = "&4Error#404 - Message not found! UnknownCommandBCoin";
+    private String unknownCommandBShop = "&4Error#404 - Message not found! UnknownCommandBShop";
+    private String reload = "&4Error#404 - Message not found! UnknownCommandBShop"; 
+    private String itemNotExists = "&4Error#404 - Message not found! ItemNotExists";
+    private String itemExists = "&4Error#404 - Message not found! ItemExists";
+    private String removeItem = "&4Error#404 - Message not found! RemoveItem";
+    private String createItem = "&4Error#404 - Message not found! CreateItem";
+    private String haveNotPerm = "&4Error#404 - Message not found! HaveNotPerm";
+    private String tooPoor = "&4Error#404 - Message not found! TooPoor";
+    private String targetOffline = "&4Error#404 - Message not found! TargetOffline";
+    private String uncorrectBCoinFormat = "&4Error#404 - Message not found! UncorrectBCoinFormat";
+    private String addCommand = "&4Error#404 - Message not found! AddCommand";
+    private String removeCommand = "&4Error#404 - Message not found! RemoveCommand";
+    private String playerWallet = "&4Error#404 - Message not found! PlayerWallet";
+    private String playerBuySelf = "&4Error#404 - Message not found! PlayerBuySelf";
+    private String playerBuyPlayer = "&4Error#404 - Message not found! PlayerBuyPlayer";
+    private String playerBuyYou = "&4Error#404 - Message not found! PlayerBuyYou";
+    private String adminGiveYou = "&4Error#404 - Message not found! AdminGiveYou";
+    private String youGivePlayer = "&4Error#404 - Message not found! YouGivePlayer";
+    private String youSetPlayer = "&4Error#404 - Message not found! YouSetPlayer";
+    private String adminSetYou = "&4Error#404 - Message not found! AdminSetYou";
+    private String youAddPlayer = "&4Error#404 - Message not found! YouAddPlayer";
+    private String adminAddYou = "&4Error#404 - Message not found! AdminAddYou";
+    private String youRemovePlayer = "&4Error#404 - Message not found! YouRemovePlayer";
+    private String adminRemoveYou = "&4Error#404 - Message not found! AdminRemoveYou";
+    private String sendYourself = "&4Error#404 - Message not found! SendYourself";
+    private String youSendPlayer = "&4Error#404 - Message not found! YouSendPlayer";
+    private String playerSendYou = "&4Error#404 - Message not found! PlayerSendYou";
+    private String BCoinUsageAdmin = "&4Error#404 - Message not found! Config.Menus.Admin";
+    private String BCoinUsageNonAdmin = "&4Error#404 - Message not found! Config.Menus.NonAdmin";
+    private String BShopUsageAdmin = "&4Error#404 - Message not found! Config.Menus.Admin";
+    private String BShopUsageNonAdmin = "&4Error#404 - Message not found! Config.Menus.NonAdmin";
+    private String ListBShop = "&4Error#404 - Message not found! Config.Menus.Lists.BShop";
+    private String ListItemCommands = "&4Error#404 - Message not found! Config.Menus.Lists.ItemCommands";
+    private String ListItemCommandsNotSet = "&4Error#404 - Message not found! Config.Menus.Lists.ItemCommandsNotSet";
     
     public MessagesInstance() {
         
@@ -313,6 +314,14 @@ public class MessagesInstance {
 
     public void setReload(String reload) {
         this.reload = reload;
+    }
+
+    public String SendYourself() {
+        return sendYourself;
+    }
+
+    public void setSendYourself(String sendYourself) {
+        this.sendYourself = sendYourself;
     }
     
 }
