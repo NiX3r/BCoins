@@ -118,7 +118,7 @@ public class DefaultFiles {
             msgfc.set("AdminAddYou", "Admin &4%NICK% &7added you &4%BCOIN% &7BCoins. You now have &4%WALLET% &7BCoins");
             msgfc.set("YouRemovePlayer", "You removed &4%NICK% &4%BCOIN%&7 BCoins. &4%NICK%&7s balance: &4%WALLET% &7BCoins");
             msgfc.set("AdminRemoveYou", "Admin &4%NICK% &7removed you &4%BCOIN% &7BCoins. You now have &4%WALLET% &7BCoins");
-            msgfc.set("SendYourself", "You cannot send yourself BCoins!");
+            msgfc.set("SendYourself", "You cannot send BCoins to yourself!");
             msgfc.set("YouSendPlayer", "You have sent &4%NICK% %BCOIN% &7BCoins. You now have &4%WALLET% &7BCoins");
             msgfc.set("PlayerSendYou", "Player &4%NICK% &7has sent you &4%BCOIN% &7BCoins. You now have &4%WALLET% &7BCoins");
             

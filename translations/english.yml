@@ -32,6 +32,7 @@ YouRemovePlayer: 'You removed &4%NICK% &4%BCOIN%&7 BCoins. &4%NICK%&7s balance: 
   &7BCoins'
 AdminRemoveYou: Admin &4%NICK% &7removed you &4%BCOIN% &7BCoins. You now have &4%WALLET%
   &7BCoins
+SendYourself: 'You cannot send BCoins to yourself!'
 YouSendPlayer: You have sent &4%NICK% %BCOIN% &7BCoins. You now have &4%WALLET% &7BCoins
 PlayerSendYou: Player &4%NICK% &7has sent you &4%BCOIN% &7BCoins. You now have &4%WALLET%
   &7BCoins

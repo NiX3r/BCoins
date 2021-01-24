@@ -27,6 +27,7 @@ YouRemovePlayer: 'Odobral si hráčovi &4%NICK% &4%BCOIN%&7 BCoinov. &4%NICK%&7 
   &7BCoinov'
 AdminRemoveYou: 'Admin &4%NICK% &7Ti odebral &4%BCOIN% &7BCoinov. Práve teraz máš &4%WALLET%
   &7BCoinov'
+SendYourself: 'Nemôžeš poslať BCoiny sám sebe!'
 YouSendPlayer: 'Poslal si hráčovi &4%NICK% %BCOIN% &7BCoinov. Práve teraz máš &4%WALLET% &7BCoinov'
 PlayerSendYou: 'Hráč &4%NICK% &7Ti poslal &4%BCOIN% &7BCoinov. Práve teraz máš &4%WALLET%
   &7BCoinov'
