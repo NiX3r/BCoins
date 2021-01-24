@@ -67,49 +67,47 @@ public class BCoinCommand implements CommandExecutor {
             if(args[0].equalsIgnoreCase("send")) {
                 
                 if(!args[1].equals(sender.getName())) {
-                    
-                }
-                else {
-                    
-                }
-                
-                if(Bukkit.getPlayer(args[1]) != null) {
-                    
-                    Player pTaker = Bukkit.getPlayer(args[1]);
-                    Player pSender = Bukkit.getPlayer(sender.getName());
-                    
-                    if(BCoinsUtil.IsDouble(args[2])) {
-
-                        double bcFrom = BCoins.GetPlayers().GetPlayer(pSender.getUniqueId()).GetBC();
-                        double bcTo = BCoins.GetPlayers().GetPlayer(pTaker.getUniqueId()).GetBC();
-                        double bcSend = Double.parseDouble(args[2]);
+                    if(Bukkit.getPlayer(args[1]) != null) {
                         
-                        if(bcSend <= bcFrom) {
+                        Player pTaker = Bukkit.getPlayer(args[1]);
+                        Player pSender = Bukkit.getPlayer(sender.getName());
+                        
+                        if(BCoinsUtil.IsDouble(args[2])) {
+
+                            double bcFrom = BCoins.GetPlayers().GetPlayer(pSender.getUniqueId()).GetBC();
+                            double bcTo = BCoins.GetPlayers().GetPlayer(pTaker.getUniqueId()).GetBC();
+                            double bcSend = Double.parseDouble(args[2]);
                             
-                            bcFrom -= bcSend;
-                            bcTo += bcSend;
-                            
-                            BCoins.GetPlayers().GetPlayer(pSender.getUniqueId()).SetBC(bcFrom);
-                            BCoins.GetPlayers().GetPlayer(pTaker.getUniqueId()).SetBC(bcTo);
-                            
-                            sender.sendMessage(BCoins.GetMessages().YouSendPlayer().replace("%NICK%", args[1]).replace("%BCOIN%", String.valueOf(bcSend)).replace("%WALLET%", String.valueOf(bcFrom)).replaceAll("&", "§"));
-                            pTaker.sendMessage(BCoins.GetMessages().PlayerSendYou().replace("%NICK%", sender.getName()).replace("%BCOIN%", String.valueOf(bcSend)).replace("%WALLET%", String.valueOf(bcTo)).replaceAll("&", "§"));
-                            
-                            pTaker.playSound(pTaker.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 20, 20);
+                            if(bcSend <= bcFrom) {
+                                
+                                bcFrom -= bcSend;
+                                bcTo += bcSend;
+                                
+                                BCoins.GetPlayers().GetPlayer(pSender.getUniqueId()).SetBC(bcFrom);
+                                BCoins.GetPlayers().GetPlayer(pTaker.getUniqueId()).SetBC(bcTo);
+                                
+                                sender.sendMessage(BCoins.GetMessages().YouSendPlayer().replace("%NICK%", args[1]).replace("%BCOIN%", String.valueOf(bcSend)).replace("%WALLET%", String.valueOf(bcFrom)).replaceAll("&", "§"));
+                                pTaker.sendMessage(BCoins.GetMessages().PlayerSendYou().replace("%NICK%", sender.getName()).replace("%BCOIN%", String.valueOf(bcSend)).replace("%WALLET%", String.valueOf(bcTo)).replaceAll("&", "§"));
+                                
+                                pTaker.playSound(pTaker.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 20, 20);
+                                
+                            }
+                            else {
+                                sender.sendMessage(BCoins.GetMessages().TooPoor().replaceAll("&", "§"));
+                            }
                             
                         }
                         else {
-                            sender.sendMessage(BCoins.GetMessages().TooPoor().replaceAll("&", "§"));
+                            sender.sendMessage(BCoins.GetMessages().UncorrectBCoinFormat().replaceAll("&", "§"));
                         }
                         
                     }
                     else {
-                        sender.sendMessage(BCoins.GetMessages().UncorrectBCoinFormat().replaceAll("&", "§"));
+                        sender.sendMessage(BCoins.GetMessages().TargetOffline().replaceAll("&", "§"));
                     }
-                    
                 }
                 else {
-                    sender.sendMessage(BCoins.GetMessages().TargetOffline().replaceAll("&", "§"));
+                    sender.sendMessage(BCoins.GetMessages().SendYourself().replaceAll("&", "§"));
                 }
                 
             }
