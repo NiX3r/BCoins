@@ -71,7 +71,7 @@ public class MySQL {
             ResultSet results = statement.executeQuery();
             results.next();
             
-            return results.getDouble("Tokens");
+            return results.getDouble("Wallet");
 
         } catch (SQLException e) {
             e.printStackTrace();

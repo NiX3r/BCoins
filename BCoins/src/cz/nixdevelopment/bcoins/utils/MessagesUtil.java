@@ -51,7 +51,7 @@ public class MessagesUtil {
         BCoins.GetMessages().setAdminAddYou(msgfc.getString("AdminAddYou"));
         BCoins.GetMessages().setYouRemovePlayer(msgfc.getString("YouRemovePlayer"));
         BCoins.GetMessages().setAdminRemoveYou(msgfc.getString("AdminRemoveYou"));
-        BCoins.GetMessages().setSendYourself("SendYourself");
+        BCoins.GetMessages().setSendYourself(msgfc.getString("SendYourself"));
         BCoins.GetMessages().setYouSendPlayer(msgfc.getString("YouSendPlayer"));
         BCoins.GetMessages().setPlayerSendYou(msgfc.getString("PlayerSendYou"));
         
