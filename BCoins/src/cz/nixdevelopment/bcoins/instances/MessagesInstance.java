@@ -317,7 +317,7 @@ public class MessagesInstance {
     }
 
     public String SendYourself() {
-        return sendYourself;
+        return BCoins.GetPrefix() + sendYourself;
     }
 
     public void setSendYourself(String sendYourself) {
