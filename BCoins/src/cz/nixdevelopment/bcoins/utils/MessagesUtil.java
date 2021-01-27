@@ -22,9 +22,9 @@ public class MessagesUtil {
         BCoins.GetMessages().setBCoinUsageNonAdmin(config.getString("Menus.BCoinUsage.NonAdmin"));
         BCoins.GetMessages().setBShopUsageAdmin(config.getString("Menus.BShopUsage.Admin"));
         BCoins.GetMessages().setBShopUsageNonAdmin(config.getString("Menus.BShopUsage.NonAdmin"));
-        BCoins.GetMessages().setListBShop("Menus.Lists.BShop");
-        BCoins.GetMessages().setListItemCommands("Menus.Lists.ItemCommands");
-        BCoins.GetMessages().setListItemCommandsNotSet("Menus.Lists.ItemCommandsNotSet");
+        BCoins.GetMessages().setListBShop(config.getString("Menus.Lists.BShop"));
+        BCoins.GetMessages().setListItemCommands(config.getString("Menus.Lists.ItemCommands"));
+        BCoins.GetMessages().setListItemCommandsNotSet(config.getString("Menus.Lists.ItemCommandsNotSet"));
         
         BCoins.GetMessages().setUnknownCommandBCoin(msgfc.getString("UnknownCommandBCoin"));
         BCoins.GetMessages().setUnknownCommandBShop(msgfc.getString("UnknownCommandBShop"));

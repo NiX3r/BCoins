@@ -67,7 +67,8 @@ public class BShopCommand implements CommandExecutor {
                         if(pocket >= cost) {
                             
                             pocket -= cost;
-                            
+
+                            BCoins.GetPlayers().GetPlayer(buier.getUniqueId()).SetBC(pocket);
                             MySQL.setTokens(buier.getUniqueId().toString(), pocket);
                             
                             BCoinsUtil.DispatchItemCommands(item, buier.getName());
@@ -150,7 +151,8 @@ public class BShopCommand implements CommandExecutor {
                             if(pocket >= cost) {
                                 
                                 pocket -= cost;
-                                
+
+                                BCoins.GetPlayers().GetPlayer(buier.getUniqueId()).SetBC(pocket);
                                 MySQL.setTokens(buier.getUniqueId().toString(), pocket);
                                 
                                 BCoinsUtil.DispatchItemCommands(item, taker.getName());
